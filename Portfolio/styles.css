@@ -10,7 +10,6 @@
 .caixa-principal{
     background-color: rgb(10, 10, 10);
     padding: 0;
-    min-width: 500px;
 }
 
 .fixed-navbar{
@@ -77,13 +76,13 @@
 
 .inicio{
     width: 100%;
-    min-height: 608px;
+    min-height: 670px;
     background-color: rgb(10, 10, 10);
-    padding: 250px 60px 0px 60px;
+    padding: 235px 60px 0px 60px;
     color: aliceblue;
     display:flex;
-    min-width: none;
     justify-content: space-between;
+    
 }
 
 .inicio h2{
@@ -129,10 +128,12 @@
     border-radius: 100%;
     margin-left: 25px;
     flex-wrap: nowrap;
+    width: 48px;
+    height: 48px;
 }
 
 .inicio p{
-    max-width: 487px;
+    max-width: 600px;
     flex-wrap: wrap;
     text-align: justify;
 }
@@ -141,14 +142,99 @@
     width: 100%;
     height: 500px;
     background-color: rgb(255, 94, 0);
-    display: flex;
 }
 
 .contato{
     width: 100%;
     height: 500px;
-    background-color: rgb(50, 50, 50);   
+    background-color: rgb(10, 10, 10);   
 }
 
+#eu{
+    border-radius: 100%;
+    display: flex;
+    margin-right: 25px;
+}
+
+#euMenor{
+    display: none;
+}
+
+#sobre-mim{
+    margin-top: 13px;
+}
+
+@media(max-width: 693px){
+
+    #eu{
+        display: none;
+    }
+
+    #euMenor{
+        display: flex;
+        border-radius: 100%;
+        margin-right: 25px;
+    }
+}
+
+@media(max-width: 597px){       /*tentativa de botar minha foto para cima*/
+    
+    #sobre-mim{        
+        margin: 50px 0;
+        padding: 0;
+    }
+
+    #euMenor{
+        display: block;
+        padding: 0;
+    }
+
+    .inicio{
+        display: block;
+    }
+}
+
+@media(max-width: 520px){
+    .fixed-navbar #teste{
+        display: block;
+    }
+
+    #menu a{
+        padding: 20px 0px;
+    }
+
+    #menu{
+        padding: 0;
+        width: 280px;
+    }
+
+    #inicio{
+        min-width: 280px;
+    }
+    
+    #teste{
+        padding: 0px 10px;
+    }
+
+    .inicio #logo_github{
+        margin-left: 7px;
+        margin-top: 15px;
+    }
+
+    .inicio #logo_linkedin{
+        margin-left: 7px;
+        margin-top: 15px;
+    }
+
+    .inicio #logo_instagram{
+        margin-top: 15px;
+        margin-left: 7px;
+    }
+
+    .inicio #logo_facebook{
+        margin-left: 7px;
+        margin-top: 15px;
+    }
+}
 
 
