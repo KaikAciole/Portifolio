@@ -8,52 +8,87 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Bungee+Spice&family=Lilita+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="caixa-principal">
+    <div>
         <nav class="fixed-navbar">
-            <ul id="teste">
-                <li><a href="#inicio" id="name"><h2>Kaik <span>Aciole</span></h2></a></li>
-                <ul id="menu">
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                    <li><a href="">Serviços</a></li>
+            <ul id="menu">
+                <li><a href="#home" id="name"><h2>Kaik <span>Aciole</span></h2></a></li>
+                <ul id="options">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
                 </ul>
             </ul>
         </nav>
         <main>
-            <section class="topico inicio" id="inicio">
+            <section class="topic home" id="home">
                 <div>
-                    <img id="eu" src="./imagens/IMG-20240403-WA0006-removebg-pre (1).png" alt="" width="250" height="250">
-                    <img id="euMenor" src="./imagens/euMenor.png" alt="">
+                    <img id="me" src="./imagens/IMG-20240403-WA0006-removebg-pre (1)-fotor-bg-remover-20240416182935.png" alt="" width="250" height="250">
                 </div>
-                <div id="sobre-mim">
-                    <h2 id="title">Prazer, eu sou o <span>Kaik!</span></h2>
+                <div id="skills-mim">
+                    <h2 id="title">Prazer, <span>eu sou o Kaik!</span></h2>
                     <p>Um cara criativo, possuo facilidade com comunicação, além
                     de agir bem em momentos de emergência solucionando 
                     problemas. Possuo conhecimento sólido nas linguagens de 
                     programação Java e Python. Já no contexto do desenvolvimento
                     web, tenho com uma proficiência um pouco menor, em
                     HTML, CSS e JavaScript, área na qual continuo aprimorando 
-                    minhas habilidades constantemente.</p>            
-                    <a href="https://www.facebook.com/kaik.emanuel.14" target="_blank"><img id="logo_facebook" src="./imagens/facebook_logo.png" alt=""></a>
-                    <a href="https://www.instagram.com/kaik_aciole/" target="_blank"><img id="logo_instagram" src="./imagens/instagram_logo.png" alt=""></a>
-                    <a href="https://www.linkedin.com/in/kaikaciole01" target="_blank"><img id="logo_linkedin" src="./imagens/linkedin_logo.png" alt=""></a>
-                    <a href="https://github.com/KaikAciole" target="_blank"><img id="logo_github" src="./imagens/icons8-github-60.png" alt=""></a>
+                    minhas skills constantemente.</p>                             
+                    <a href="https://www.facebook.com/kaik.emanuel.14" target="_blank"><img id="logo_facebook"class="logo" src="./imagens/facebook2.png" alt=""></a>
+                    <a href="https://www.instagram.com/kaik_aciole/" target="_blank"><img id="logo_instagram" class="logo" src="./imagens/instagram2.png" alt=""></a>
+                    <a href="https://www.linkedin.com/in/kaikaciole01" target="_blank"><img id="logo_linkedin" class="logo" src="./imagens/linkedin2.png" alt=""></a>
+                    <a href="https://github.com/KaikAciole" target="_blank"><img id="logo_github" class="logo" src="./imagens/github2.png" alt=""></a>                    
                 </div>            
             </section> 
-            <section class="topico sobre" id="sobre">
-                
+            <section class="topic skills" id="skills">
+                <h2 id="text-title">Minhas <span>Habilidades</span>.</h2>
+                <div class="top-cards">
+                    <div class="card um" onmouseover="eventoClick()" onmouseout="eventoTeste()">
+                        <img  id="tan" src="./imagens/java.png" alt="">
+                        <p id="none">Estudo essa linguagem desde que entrei na faculdade de Análise e desenvolvimento de sistemas
+                            no IFPB e venho me aprimorando cada vez mais. Aprendi com ela conceitos como programação 
+                            orientada a objetos, estrutura de dados e padrões de projetos.
+                        </p>                
+                    </div>
+                    <div class="card dois">
+                        <img src="./imagens/html-5.png" alt="">
+                        <img src="./imagens/css-3.png" alt="">
+                        <img src="./imagens/script-java.png" alt="">
+                    </div>
+                    <div class="card tres">
+                        <img src="./imagens/python.png" alt="">
+                    </div>
+                    <div class="card 4">
+
+                    </div>                    
+                </div>    
             </section>
-            <section class="topico contato" id="contato">
+            <section class="topic projects" id="projects">
 
             </section>
-            <section class="topico servicos" id="servicos">
-
-            </section> 
         </main>
     </div>   
 
 </body>
 </html>
+
+
+
+
+<!--<div class="top-cards">
+    <div class="card 1">
+        <img src="./imagens/java.png" alt="">
+    </div>
+    <div class="card 2">
+        <img src="./imagens/html-5.png" alt="">
+        <img src="./imagens/css-3.png" alt="">
+        <img src="./imagens/script-java.png" alt="">
+    </div>
+    <div class="card 3">
+        <img src="./imagens/python.png" alt="">
+    </div>
+    <div class="card 4">
+
+    </div>

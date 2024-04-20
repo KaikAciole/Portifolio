@@ -5,20 +5,18 @@
     font-family: "Poppins", Helvetica, sans-serif;
     font-size: 16px;
     box-sizing: border-box;
-}
-
-.caixa-principal{
     background-color: rgb(10, 10, 10);
 }
 
 .fixed-navbar{
-    position: fixed;
+    position: sticky;
     left: 0;
     top: 0;
     right: 0;
     background-color: rgb(10, 10, 10);
     align-items: center;
     box-shadow: 0 1px 10px 2px rgb(30, 30, 30);
+    padding-right: 200px;
 }
 
 
@@ -27,7 +25,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 0 200px 0 50px;
+    padding: 0 0px 0 50px;
     justify-content: space-between;
 }
 
@@ -38,7 +36,7 @@
     padding: 20px 5px;
     background-color: rgb(10, 10, 10);
     border-radius: 20%;
-    width: 70px;
+    width: 75px;
     text-align: center; 
     font-family: "Poppins", sans-serif;
 }
@@ -53,7 +51,7 @@
     color: aliceblue;
 }
 
-#menu{
+#options{
     padding: 0 0;
 }
 
@@ -73,175 +71,202 @@
     color:rgb(255, 94, 0);
 }
 
-.topico{
-    padding: 0 50px;
+.topic{
+    padding: 0 60px;
 }
 
-.inicio{
+.home{
     width: 100%;
-    min-height: 608px;
+    min-height: 544px;
     background-color: rgb(10, 10, 10);
-    padding: 150px 60px 0px 60px;
+    padding: 0px 60px 0px 60px;
     color: aliceblue;
     display:flex;
     justify-content: center;
+    align-items: center;
 }
 
-.inicio h2{
+.home h2{
     font-size: 40px;
     flex-wrap: nowrap; 
     font-family: "Poppins", sans-serif;   
 }
 
-.inicio span{
+.home span{
     color: rgb(255, 94, 0);
     font-size: 40px;
     font-family: "Poppins", sans-serif;
 }
 
-.inicio #logo_facebook{
+.logo{    
     object-fit: cover;
     margin-top: 20px;
-    box-shadow: 0 0 20px 2px rgba(118, 160, 245, 0.6);
-    border-radius: 100%;
-    flex-wrap: nowrap;
-}
-
-.inicio #logo_instagram{
-    object-fit: cover;
-    margin-top: 20px;
-    box-shadow: 0 0 20px 2px rgba(227, 70, 248, 0.6);
-    border-radius: 100%;
-    margin-left: 25px;
-    flex-wrap: nowrap;
-}
-
-.inicio #logo_linkedin{
-    object-fit: cover;
-    margin-top: 20px;
-    box-shadow: 0 0 20px 4px rgba(76, 144, 238, 0.6);
-    border-radius: 100%;
-    margin-left: 25px;
-    flex-wrap: nowrap;
-}
-
-.inicio #logo_github{
-    object-fit: cover;
-    margin-top: 20px;
-    box-shadow: 0 0 20px 2px rgba(255, 255, 255, 0.6);
-    border-radius: 100%;
     margin-left: 25px;
     flex-wrap: nowrap;
     width: 48px;
     height: 48px;
+    
 }
 
-.inicio p{
+#logo_facebook{
+    margin-left: 0;
+}
+
+.home p{
     max-width: 600px;
     flex-wrap: wrap;
     text-align: justify;
     font-size: 20px;    
 }
 
-.sobre{
+.skills{
     width: 100%;
-    height: 500px;
+    height: 544px;
     background-color: rgb(255, 94, 0);
 }
 
-.contato{
+.projects{
     width: 100%;
-    height: 500px;
+    height: 544px;
     background-color: rgb(10, 10, 10);   
 }
 
-#eu{
+#me{
     border-radius: 100%;
     display: flex;
     margin-right: 90px;
-    box-shadow: -5px -3px 3px 1px rgb(136, 30, 30);
-}
-
-#euMenor{
-    display: none;
-}
-
-#sobre-mim{
-    margin-top: 0px;
-    margin-bottom: 50px;
+    box-shadow: -5px -3px 3px 1px rgb(255, 255, 255);
+    width: 300;
+    height: 300;
 }
 
 @media(max-width: 693px){
 
-    #eu{
-        display: none;
-    }
-
-    #euMenor{
+    #me{
         display: flex;
         border-radius: 100%;
         margin-right: 25px;
+        margin-top: 25px;
+        width: 150px;
+        height: 150px;
     }
+
+    #options{
+        width: max-content;
+    }
+
 }
 
-@media(max-width: 597px){       /*tentativa de botar minha foto para cima*/
+@media(max-width: 597px){
     
-    #sobre-mim{        
+    #skills-mim{        
         margin: 50px 0;
         padding: 0;
     }
 
-    #euMenor{
+    .home{
         display: block;
-        padding: 0;
     }
 
-    .inicio{
-        display: block;
+    #options{
+        width: max-content;
     }
+    
 }
 
-@media(max-width: 520px){
-    .fixed-navbar #teste{
+@media(max-width: 549px){
+    
+    .fixed-navbar #menu{
         display: block;
     }
 
-    #menu a{
+    #options a{
         padding: 20px 0px;
     }
 
-    #menu{
-        padding: 0;
-        width: 280px;
-    }
+    #options{
+        width: max-content;
+    }    
+}
 
-    #inicio{
-        min-width: 280px;
-    }
-    
-    #teste{
-        padding: 0px 10px;
-    }
+@media(max-width: 417px){
 
-    .inicio #logo_github{
+    .logo{
         margin-left: 7px;
         margin-top: 15px;
     }
 
-    .inicio #logo_linkedin{
-        margin-left: 7px;
-        margin-top: 15px;
-    }
+}
 
-    .inicio #logo_instagram{
-        margin-top: 15px;
-        margin-left: 7px;
-    }
-
-    .inicio #logo_facebook{
-        margin-left: 7px;
-        margin-top: 15px;
+@media(max-width: 364px){
+    #logo_instagram{
+        margin-right: 70px;
     }
 }
+
+@media(max-width:314px){
+    #logo_instagram{
+        margin-right: 30px;
+    }
+}
+
+/*     proximo bloco de conteudos            */
+
+#skills{
+    display: block;
+    padding-top: 30px;
+}
+
+.skills #text-title{    
+    font-size: 40px;
+    background-color: rgb(255, 94, 0);
+    text-align: center;
+    color: black;
+}
+
+.skills span{
+    font-size: 40px;
+    background-color: rgb(255, 94, 0);
+    color:aliceblue;
+}
+
+.top-cards{
+    background-color: rgb(255, 94, 0);
+    display: flex;
+    justify-content: space-around;
+}
+
+.card{
+    display: flex;
+    width: 230px;
+    height: 365px;
+    margin-left: 50px;
+    background-color: rgb(10, 10, 10);
+    margin-top: 30px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2%;
+}
+
+.card:hover{
+    box-shadow: 0px 0px 20px 13px white;
+}
+
+.card img{
+    width: 120px;
+    height: 160px;
+    object-fit: cover;
+    margin: 0 110px;
+}
+
+.card p{
+    display: none;
+    color: aliceblue;
+    text-align: justify;
+    margin: 5px 20px;
+}
+
+
 
 
