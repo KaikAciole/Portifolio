@@ -10,3 +10,7 @@
 // pythonn icon 
 <a href="https://www.flaticon.com/br/icones-gratis/pitao" title="pitão ícones">Pitão ícones criados por Freepik - Flaticon</a>
 
+
+// SQL icon
+<a href="https://www.flaticon.com/free-icons/sql-server" title="sql server icons">Sql server icons created by Nadiinko - Flaticon</a>
+

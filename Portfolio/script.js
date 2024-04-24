@@ -1,14 +1,63 @@
-function eventoClick(){
-    var teste = document.getElementById("tan");
-    var ton = document.getElementById("none"); 
-    teste.style.display = "none"
-    ton.style.display = "block"
+function eventCard1Over(){
+    let x = document.getElementById("img-card-1");
+    let y = document.getElementById("text-card-1"); 
+    x.style.display = "none"
+    y.style.display = "block"
 }
 
-function eventoTeste(){
-    var toto = document.getElementById("tan");
-    var tente = document.getElementById("none"); 
-    tente.style.display = "none";
-    toto.style.display = "flex";
-    
+function eventCard1Out(){
+    let x = document.getElementById("img-card-1");
+    let y = document.getElementById("text-card-1"); 
+    x.style.display = "flex";
+    y.style.display = "none";
+}
+
+function eventCard2Over(){
+    let x = document.getElementById("img-card-2");   
+    let y = document.getElementById("text-card-2");
+    x.style.display = "none";
+    y.style.display = "block";
+}
+
+function eventCard2Out(){
+    let x = document.getElementById("img-card-2");
+    let y = document.getElementById("text-card-2");
+    x.style.display = "flex";
+    y.style.display = "none";
+}
+
+function eventCard3Over(){
+    let x = document.getElementById("img-card-3");
+    let y = document.getElementById("text-card-3");
+    x.style.display = "none";
+    y.style.display = "block"
+}
+
+function eventCard3Out(){
+    let x = document.getElementById("img-card-3");
+    let y = document.getElementById("text-card-3");
+    x.style.display = "flex";
+    y.style.display = "none"
+}
+
+function eventCard4Over(){
+    let x = document.getElementById("img-card-4");
+    let y = document.getElementById("text-card-4");
+    x.style.display = "none";
+    y.style.display = "block"
+}
+
+function eventCard4Out(){
+    let x = document.getElementById("img-card-4");
+    let y = document.getElementById("text-card-4");
+    x.style.display = "flex";
+    y.style.display = "none"
+}
+
+function eventLink(){
+    let x = document.getElementById("curriculo");
+    let y = document.getElementById("curriculo2");
+    x.style.display = "none";
+    x.innerHTML
+    y.style.display = "flex";
 }

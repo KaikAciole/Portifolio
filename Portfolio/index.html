@@ -43,27 +43,44 @@
                 </div>            
             </section> 
             <section class="topic skills" id="skills">
-                <h2 id="text-title">Minhas <span>Habilidades</span>.</h2>
+                <div id="content-text">
+                    <h2 id="text-title">Minhas <span>Habilidades</span>.</h2>
+                </div>                    
                 <div class="top-cards">
-                    <div class="card um" onmouseover="eventoClick()" onmouseout="eventoTeste()">
-                        <img  id="tan" src="./imagens/java.png" alt="">
-                        <p id="none">Estudo essa linguagem desde que entrei na faculdade de Análise e desenvolvimento de sistemas
+                    <div class="card um" onmouseover="eventCard1Over()" onmouseout="eventCard1Out()">
+                        <img  id="img-card-1" src="./imagens/java.png" alt="">
+                        <p id="text-card-1">Estudo essa linguagem desde que entrei na faculdade de Análise e desenvolvimento de sistemas
                             no IFPB e venho me aprimorando cada vez mais. Aprendi com ela conceitos como programação 
                             orientada a objetos, estrutura de dados e padrões de projetos.
                         </p>                
                     </div>
-                    <div class="card dois">
-                        <img src="./imagens/html-5.png" alt="">
-                        <img src="./imagens/css-3.png" alt="">
-                        <img src="./imagens/script-java.png" alt="">
+                    <div class="card dois" onmouseover="eventCard2Over()" onmouseout="eventCard2Out()">
+                        <img id="img-card-2" src="./imagens/Design sem nome.png" alt="">                        
+                        <p id="text-card-2">Comecei a estudar esse trio de linguagens básicas para o desenvolvimento web em 2019 quando fiz meu 
+                            primeiro curso de programação e tive meu primeiro contato. Parei por um tempo mas venho 
+                            aprimorando meus conhecimentos criando sites cada vez melhores.
+                        </p>
                     </div>
-                    <div class="card tres">
-                        <img src="./imagens/python.png" alt="">
+                    <div class="card tres" onmouseover="eventCard3Over()" onmouseout="eventCard3Out()">
+                        <img id="img-card-3" src="./imagens/python.png" alt="">
+                        <p id="text-card-3">Meu primeiro contato com o Python surgiu na faculdade, com estudos sobre lógica de programação e 
+                            algoritmos. Não tem como não se apaixonar por essa linguagem, com a sintaxe simples e 
+                            tudo mais. Me aprofundei em algumas libs e sigo estudando.
+                            
+                        </p>
                     </div>
-                    <div class="card 4">
+                    <div class="card quatro" onmouseover="eventCard4Over()" onmouseout="eventCard4Out()">
+                        <img id="img-card-4" src="./imagens/sql-server.png" alt="">
+                        <p id="text-card-4"> Comecei a estudar SQL recentemente (cerca de 3 meses) na faculdade mas entramos em greve e acabei 
+                            me interessando em dar continuidade aos estudos da linguagem para complementar meus conhecimentos necessários 
+                            e essenciais para área e para a carreira na área que pretendo seguir.
 
-                    </div>                    
-                </div>    
+                        </p>
+                    </div>                                      
+                </div> 
+                <div id="curriculo">
+                    <a id="curriculo" href="" download="currículo.pdf" onclick="eventLink()" >Baixar Currículo</a>                    
+                </div>     
             </section>
             <section class="topic projects" id="projects">
 
