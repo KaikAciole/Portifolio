@@ -53,11 +53,3 @@ function eventCard4Out(){
     x.style.display = "flex";
     y.style.display = "none"
 }
-
-function eventLink(){
-    let x = document.getElementById("curriculo");
-    let y = document.getElementById("curriculo2");
-    x.style.display = "none";
-    x.innerHTML
-    y.style.display = "flex";
-}

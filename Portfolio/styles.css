@@ -180,11 +180,12 @@ html{
 #curriculo{
     display: flex;
     background-color: rgb(255, 94, 0);
-    justify-content: center;
+    justify-content: center;    
+    color: rgb(14, 10, 36);
 }
 
 #curriculo:visited{
-    color: chartreuse;
+    color: gray;
 }
 
 #text-title{
@@ -243,6 +244,13 @@ html{
 
 .card.quatro img{
     width: max-content; 
+}
+
+/* outra sessão */
+
+#projects h1{
+    color: rgb(238, 44, 44);
+    background-color: rgb(0, 0, 0);
 }
 
 @media(max-width: 759px){
