@@ -53,3 +53,8 @@ function eventCard4Out(){
     x.style.display = "flex";
     y.style.display = "none"
 }
+
+function eventLink(){
+    let x = document.getElementById("curriculo");
+    x.style.color = "gray";
+}
