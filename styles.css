@@ -145,8 +145,25 @@ html{
     margin-left: 25px;
     flex-wrap: nowrap;
     width: 48px;
-    height: 48px;    
+    height: 48px;
+    opacity: 0.6;
+    -moz-opacity: 0.6;
+    filter: alpha(opacity=6);
+    -webkit-filter: opacity(0.6);
+    filter: gray;
+    -webkit-filter: grayscale(100%);
+    image-rendering: auto;
 }
+
+.logo:hover{
+    opacity: 1;
+    -moz-opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-filter: opacity(1);
+    filter: none;
+    -webkit-filter: grayscale(0%);
+    image-rendering: auto;
+}  
 
 #logo_facebook{
     margin-left: 0;
