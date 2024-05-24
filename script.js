@@ -77,8 +77,6 @@ function eventVerMenos(){
     btn1.style.display = "flex";
     btn2.style.display = "none"
     for(let item of x){
-        setTimeout(function(){
-            item.style.display = "none"
-        }, 200)
+        item.style.display = "none"
     }
 }
