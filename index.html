@@ -28,7 +28,7 @@
         <main>
             <section class="topic home" id="home">
                 <div class="floating">
-                    <h1>Hello World!</h1>
+                    <a href="arquivos/curriculo.pdf" type="aplication/pdf" download="currículo.pdf" onclick="eventLink()">Hello World!</a>
                 </div>
             </section>
             <section class="topic about" id="about">
@@ -112,7 +112,31 @@
             </section>
             <section class="topic projects" id="projects">
                 <div data-aos="fade-up">
-                    <h2>Meus Projetos.</h2>
+                    <div id="t">
+                        <h2 id="ptitle">Meus Projetos<span>.</span></h2>                                
+                    </div>
+                    <div class="pCards" id="pCard1">
+                        <a href="https://github.com/KaikAciole/DinoMarioBrosGame" target="_blank" rel="noopener noreferrer"><img src="./imagens/exibição.gif" alt=""></a>
+                    </div> 
+                    <div>
+                        <div class="pCards nVer">
+                            <a href="https://github.com/KaikAciole/agendaDeContatos" target="_blank" rel="noopener noreferrer"><img src="./imagens/Captura de tela 2024-04-03 211944.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="pCards nVer">
+                            <img src="./imagens/Captura de tela 2024-05-25 015553.png" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="pCards nVer">
+                            <img src="./imagens/Captura de tela 2024-05-25 015553.png" alt="">
+                        </div>
+                    </div>
+                    <div class="button2">
+                        <a href="#pCard1" class="bn3637 bn37" id="buttom1" onclick="eventSee()">Ver Mais</a>
+                        <a href="#pCard1" class="bn3637 bn37" id="buttom2" onclick="eventNoSee()">Ver Menos</a>
+                    </div>
                 </div>
             </section>
         </main>

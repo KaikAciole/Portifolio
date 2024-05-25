@@ -70,6 +70,19 @@ function eventVerMais(){
     }
 }
 
+function eventSee(){
+    let x = document.getElementsByClassName("nVer");
+
+    let y = document.getElementById("buttom1");
+    let z = document.getElementById("buttom2");
+    y.style.display = "none";
+    z.style.display = "flex";
+
+    for(let item of x){
+        item.style.display = "flex"
+    }
+}
+
 function eventVerMenos(){
     let x = document.getElementsByClassName("unview");
     let btn1 = document.getElementById("btn1");
@@ -79,4 +92,22 @@ function eventVerMenos(){
     for(let item of x){
         item.style.display = "none"
     }
+}
+
+function eventNoSee(){
+    let x = document.getElementsByClassName("nVer");
+
+    let y = document.getElementById("buttom1");
+    let z = document.getElementById("buttom2");
+    y.style.display = "flex";
+    z.style.display = "none";
+
+    for(let item of x){
+        item.style.display = "none"
+    }
+}
+
+function eventChecked2(){
+    let x = document.getElementById("l2");
+    x.style.backgroundColor = "white";
 }
